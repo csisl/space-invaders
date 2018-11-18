@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class WaveSpawner : MonoBehaviour {
 
 	public Transform enemyPrefab; // enemy prefab we want to spawn
+	public Transform enemyPrefab1;
+	public Transform enemyPrefab2;
 	public float timeBetweenWaves = 5f;	// make longer after testing is done
 	// how long it will take to spawn the first wave
 	private float countdown = 2f;

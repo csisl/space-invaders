@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4249219178777512}
+  - component: {fileID: 114479495624538190}
   m_Layer: 0
   m_Name: Laser Beamer
   m_TagString: Untagged
@@ -58,6 +59,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1472273948295746
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4053034419509146}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1851724168714560
 GameObject:
   m_ObjectHideFlags: 1
@@ -75,20 +91,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &4053034419509146
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1472273948295746}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 1.02, z: 2.48}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4087062771078536}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4087062771078536
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1382593727290540}
-  m_LocalRotation: {x: -0, y: -0.711649, z: 0, w: 0.7025353}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0.06, y: 2.83, z: 0.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4960728281001846}
+  - {fileID: 4053034419509146}
   m_Father: {fileID: 4249219178777512}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &4249219178777512
 Transform:
   m_ObjectHideFlags: 1
@@ -123,9 +153,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1851724168714560}
-  m_LocalRotation: {x: -0.49676752, y: 0.50321174, z: 0.5032119, w: 0.49676737}
-  m_LocalPosition: {x: -0.040769994, y: -0.03509283, z: -0.059479475}
-  m_LocalScale: {x: 100.000046, y: 100.000046, z: 100}
+  m_LocalRotation: {x: -0.5000001, y: -0.49999988, z: -0.5000001, w: 0.49999988}
+  m_LocalPosition: {x: 0.039999995, y: -0.03509283, z: 0.06000001}
+  m_LocalScale: {x: 100.00022, y: 100.00027, z: 100.00014}
   m_Children: []
   m_Father: {fileID: 4087062771078536}
   m_RootOrder: 0
@@ -217,3 +247,22 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1237768024023494}
   m_Mesh: {fileID: 4300000, guid: 23a07b0fde86749d494a149a1d2bae2e, type: 3}
+--- !u!114 &114479495624538190
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1007384699264984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 588d740505d12415aa995dd60e5edc51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 15
+  fireRate: 1
+  enemyTag: Enemy
+  turnSpeed: 10
+  partToRotate: {fileID: 4087062771078536}
+  bulletPrefab: {fileID: 1630219888179302, guid: 2945cd9c5bf0b4d6782282dc56a182fa,
+    type: 2}
+  firePoint: {fileID: 4053034419509146}
