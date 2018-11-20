@@ -206,7 +206,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 8c15382a7e78b48a9b3008146097432b, type: 2}
+  - {fileID: 2100000, guid: b8498fb4534814d5e99823ff7d33799a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -242,7 +242,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100006, guid: 54e83e5012658433bb1e9f5892b15f18, type: 3}
-  - {fileID: 2100000, guid: 0263445e80c9f48e0b7220788825bf1b, type: 2}
+  - {fileID: 2100000, guid: ecdeaa50999324b96a320ed748db7995, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -330,7 +330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 588d740505d12415aa995dd60e5edc51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 15
+  range: 5
   fireRate: 1
   enemyTag: Enemy
   turnSpeed: 10
