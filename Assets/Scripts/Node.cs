@@ -10,8 +10,8 @@ public class Node : MonoBehaviour {
 	private Color startColor;
 	private Renderer rend;
 	public Vector3 positionOffset;
-
-	private GameObject turret;
+	[Header("Optional")]
+	public GameObject turret;
 
 	BuildManager buildManager;
 
@@ -25,7 +25,7 @@ public class Node : MonoBehaviour {
 	// when we click the node
 	void OnMouseDown(){
 
-		if (buildManager.GetTurretToBuild() == null) {
+		if (!buildManager.CanBuild) {
 			return;
 		}
 
@@ -35,9 +35,7 @@ public class Node : MonoBehaviour {
 			return;
 		}
 
-		// build a turret on the node
-		GameObject turretToBuild = buildManager.GetTurretToBuild();
-		turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
+		buildManager.BuildTurretOn(this);
 
 	}
 
@@ -45,7 +43,7 @@ public class Node : MonoBehaviour {
 	void OnMouseEnter() {
 		// every time the mouse passed by this collider, this will be called once 
 
-		if (buildManager.GetTurretToBuild() == null) {
+		if (!buildManager.CanBuild) {
 			return;
 		}
 
@@ -56,6 +54,10 @@ public class Node : MonoBehaviour {
 	void OnMouseExit() {
 		// change back to the default color
 		rend.material.color = startColor;
+	}
+
+	public Vector3 GetBuildPosition() {
+		return transform.position + positionOffset;
 	}
 
 }
