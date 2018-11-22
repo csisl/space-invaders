@@ -19,8 +19,9 @@ public class BuildManager : MonoBehaviour {
 	}
 
 	void Start() {
-		moneyText.text = "$" + PlayerStats.money.ToString();
+		moneyText.text = "$50"  + PlayerStats.money.ToString();
 	}
+
 
 	// public void SetTurretToBuild(GameObject turret){
 	// 	// change what turret we want to build
