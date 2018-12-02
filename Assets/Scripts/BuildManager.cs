@@ -15,6 +15,9 @@ public class BuildManager : MonoBehaviour
     public Text moneyText;
     private float timeLeft = 60.0f;
     public Text timeLeftText;
+    private int round = 1;
+	private int level = 1;
+	public Text levelText;
 
     void Awake()
     {
@@ -25,6 +28,7 @@ public class BuildManager : MonoBehaviour
     void Start()
     {
         moneyText.text = "$50" + PlayerStats.money.ToString();
+		levelText.text = "Level " + level.ToString();
     }
 
     void Update()
@@ -32,7 +36,31 @@ public class BuildManager : MonoBehaviour
         timeLeft -= Time.deltaTime;
         if (timeLeft <= 0)
         {
-            SceneManager.LoadScene("WinnerScreen");
+			
+            if (round == 1)
+            {
+				WaveSpawner.waveNumber = 1;
+				timeLeft = 60.0f;
+				level = 2;
+				round++;
+				levelText.text = "Level " + level.ToString();
+				PlayerStats.money = 500;
+				Health.health = 100;
+            }
+            else if (round == 2)
+            {
+				WaveSpawner.waveNumber = 1;
+				timeLeft = 60.0f;
+				level = 3;
+				round++;
+				levelText.text = "Level " + level.ToString();
+				PlayerStats.money = 500;
+				Health.health = 100;
+            }
+            else if (round == 3)
+            {
+                SceneManager.LoadScene("WinnerScreen");
+            }
         }
         timeLeftText.text = Mathf.Floor(timeLeft % 60).ToString() + " seconds left";
     }

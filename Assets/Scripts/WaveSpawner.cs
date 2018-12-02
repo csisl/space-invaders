@@ -12,7 +12,7 @@ public class WaveSpawner : MonoBehaviour
     public float timeBetweenWaves = 5f; // make longer after testing is done
                                         // how long it will take to spawn the first wave
     private float countdown = 2f;
-    private int waveNumber = 1;
+    public static int waveNumber = 1;
 
     // reference to spawn location
     public Transform spawnPoint;

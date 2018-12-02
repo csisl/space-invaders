@@ -322,6 +322,7 @@ GameObject:
   - component: {fileID: 4278788103203700}
   - component: {fileID: 95558169421439268}
   - component: {fileID: 114160453799745422}
+  - component: {fileID: 136907997454955468}
   m_Layer: 0
   m_Name: Rabbit_Yellow
   m_TagString: Enemy
@@ -739,6 +740,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+--- !u!136 &136907997454955468
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1803846780831324}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!137 &137032621897422092
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

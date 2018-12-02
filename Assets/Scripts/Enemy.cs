@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour {
 
 	public float speed = 10f;
 	private Transform target;
 	private int wavepointIndex = 0;
+
 
 	void Start(){
 		target = waypoints.points[0];
@@ -27,6 +29,7 @@ public class Enemy : MonoBehaviour {
 	void GetNextWaypoint(){
 
 		if(wavepointIndex >= waypoints.points.Length - 1){
+			
 			// destroy enemy when you reach the end
 			Destroy(gameObject);
 			return;
