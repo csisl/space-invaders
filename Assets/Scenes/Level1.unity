@@ -6254,7 +6254,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 1794670967}
-  health: 0
   startingHealth: 100
   healthText: {fileID: 2071524991}
 --- !u!23 &955288766
@@ -9431,6 +9430,11 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114292169597932554, guid: eca731e23a2a64e8fa0e264da2b5c9d9,
+        type: 2}
+      propertyPath: m_FillAmount
+      value: 0.392
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eca731e23a2a64e8fa0e264da2b5c9d9, type: 2}
@@ -13233,7 +13237,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2071524989}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 

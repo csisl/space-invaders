@@ -27,7 +27,7 @@ public class BuildManager : MonoBehaviour
 
     void Start()
     {
-        moneyText.text = "$50" + PlayerStats.money.ToString();
+        moneyText.text = "$500";
 		levelText.text = "Level " + level.ToString();
     }
 
@@ -46,6 +46,7 @@ public class BuildManager : MonoBehaviour
 				levelText.text = "Level " + level.ToString();
 				PlayerStats.money = 500;
 				Health.health = 100;
+				Health.healthBarAmount = 1.0f;
             }
             else if (round == 2)
             {
@@ -56,6 +57,7 @@ public class BuildManager : MonoBehaviour
 				levelText.text = "Level " + level.ToString();
 				PlayerStats.money = 500;
 				Health.health = 100;
+				Health.healthBarAmount = 1.0f;
             }
             else if (round == 3)
             {

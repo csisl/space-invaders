@@ -19,6 +19,10 @@ public class WaveSpawner : MonoBehaviour
 
     public Text waveCountdownText;
 
+	void Start(){
+		waveNumber = 1;
+	}
+
     void Update()
     {
         // manage time

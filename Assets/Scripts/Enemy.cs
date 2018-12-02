@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class Enemy : MonoBehaviour {
 
 	public float speed = 10f;
@@ -32,6 +33,8 @@ public class Enemy : MonoBehaviour {
 			
 			// destroy enemy when you reach the end
 			Destroy(gameObject);
+			Health.health -= 20;
+			Health.healthBarAmount -= .20f;
 			return;
 		}
 
