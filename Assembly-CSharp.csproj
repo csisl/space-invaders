@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{EDFAD477-BF5D-051E-F98C-BFF6F23FAA30}</ProjectGuid>
+    <ProjectGuid>{9C1AB5AA-FF6B-4087-905C-45B9B2438791}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -69,16 +69,16 @@
      <None Include="Assets\ImportedAssets\tower-defense-assets\README.txt" />
      <None Include="Assets\ImportedAssets\Planets\shader\two_side_shader.shader" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>/home/stephanie/Fall2018/GameDev/tower_defense/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>/home/stephanie/Fall2018/GameDev/space-invaders/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/home/stephanie/Fall2018/GameDev/tower_defense/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/home/stephanie/Fall2018/GameDev/space-invaders/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>/home/stephanie/Fall2018/GameDev/tower_defense/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>/home/stephanie/Fall2018/GameDev/space-invaders/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>/home/stephanie/Fall2018/GameDev/tower_defense/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>/home/stephanie/Fall2018/GameDev/space-invaders/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/opt/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
